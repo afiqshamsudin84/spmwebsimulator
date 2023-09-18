@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgrammeSimulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<style>
+    .row {
+        margin-bottom: 5px;
+    }
+    body{
+        background-color: rgb(4, 4, 49);
+    }
+    .form-control{
+        background-color: rgba(255, 255, 255, 0.199);
+        color: beige;
+        border-style: none;
+    }
+    header{
+        background-color: rgba(255, 255, 255, 0.322);
+    }
+    p, h3{
+        color: rgb(232, 241, 144);
+    }
+    #picbawah{
+        width: 400px;
+        
+    }
+    #picatas{
+        width: 200px;
+    }
+
+    a{
+        text-decoration:none ;
+        color:rgb(234, 245, 86);
+    }
+</style>
+<body>
+    <div id="apps">
+        <header class="row">
+            <div class="container ms-3 text-primary ">
+                <img id="picatas" class="img-fluid rounded d-block py-3" src="assets/KPJU No Num - White.png" alt="">
+             </div>
+        </header>
+        
+        <div class="row">
+            <div class="col m-3 p-3 ">
+                <h2 class="text-info text-justify-center">Enter your SPM grade below :</h2>
+                <form action="" class="form-control">
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="bm">Bahasa Malaysia :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="bm" required>
+                                <option value="">Select..</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="bi">Bahasa Inggeris :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="bi">
+                                <option value="">Select..</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="math">Matematik :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="math">
+                                <option value="">Select..</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sc">Sains :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sc">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="bio">Biologi :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="bio">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="fiz">Fizik :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="fiz">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="kim">Kimia :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="kim">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="addMath">Matematik Tambahan :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="addMath">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sej">Sejarah:</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sej" required>
+                                <option >Select..</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sl1">Other Subject 1 :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sl1">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sl1">Other Subject 2 :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sl2">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-3 mx-auto mt-3">
+                        <button class="btn btn-primary">
+                            <a onclick="calculate()" class="list-group-item list-group-item-action" href="#scrollDown">Submit</a>
+                        </button>
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="col m-3 p-3" id="scrollDown">
+                <div class="row">
+                    <h2 class="text-warning">You are eligible to apply for below programme :</h2>
+                    <br><h3>(Please click the programme for career opportunity details)</h3>
+                    <p id="gagal" class="mb-2 text-danger"></p>
+                    <a id="din" class="mb-2" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            Upon successful completion of the 3-year Diploma in Nursing programme at KPJUC, students will be eligible to sit for national level examination by Lembaga Jururawat Malaysia (LJM). In our more than 30 years experience, all 100% of our students pass this examination. After passing the examination they will be awarded State Registered Nurse (SRN) status. Many of them are employed by KPJ Specialist Hospitals while others work at other private or public hospitals. Upon verification done by the respective country’s Nursing Board, candidates would be eligible to work abroad.
+                            <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dmi" class="mb-2" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            Graduates of this course may grow as a radiologic technicians, or specialise in a particular area of medical radiography to become radiation technologists. Non-clinical professions of this course may include clinical instructor (education), modality application specialist and researchers.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dpy" class="mb-2" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            Physiotherapy is a profession that is highly sought after in Malaysia. Physiotherapists are needed in various places apart from hospitals such as community, nursing homes, senior care centre, special schools, sport team, fitness centre, industrial, private center or private hospitals and government agencies. You may also continue your study to Bachelor of Physiotherapy or Bachelor of Occupational Therapy upon graduation.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dph" class="mb-2" data-bs-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            Diverse job opportunities are available for Diploma in Pharmacy holders such as:
+                            <br>
+                            Pharmacy Practice/ Clinical: Pharmacy assistant in hospitals, clinics, retail pharmacy and community health centres
+                            <br>
+                            Pharmaceutical industry: In Pharmaceutical companies, such as manufacturing, process control, quality control and marketing
+                            <br>
+                            Academic/Education: Tutor, pharmacy instructor and lab assistant at relevant pharmacy schools or institutes.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dhcm" class="mb-2" data-bs-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            As graduates of Diploma in Healthcare Management, you will oversee and manage elements involved in the healthcare system. You will have employment opportunities either at KPJ Specialist Hospitals or other organisatons within relevant sectors such as Private or Public Hospitals, Clinics, Public Health Department, Rehabilitation Centers, Community Health Organisations, Nursing Homes, Health Insurance Organisations, Health Care Consulting firms, Universities and Research Institutions. Diploma in Healthcare Management is a great beginning of more rewarding careers in management of healthcare institutions.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dhim" class="mb-2" data-bs-toggle="collapse" href="#collapseExample6" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample6">
+                        <div class="card card-body">
+                            Diploma Health Information Management offers a great opportunity to work at KPJ Healthcare Group as well as in Government and Private Hospitals in Malaysia and abroad. The positions offered are Medical Record Officer/Health Information Officer (Clinical Coder), Insurance Coder, Marketing Officer, and Information Officer. Diploma graduates may also choose to further their Degree programmes in Healthcare Information System or Information Systems in General.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="dora" class="mb-2" data-bs-toggle="collapse" href="#collapseExample7" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample7">
+                        <div class="card card-body">
+                            Operation Theatre
+                            <br>
+                            As Operating Department Practitioner assisting Surgeons and Anesthetists in surgeries.
+                            <br>
+                            Healthcare  Industry
+                            <br>
+                            As surgical sale representative personnel for surgical instruments and equipment in operation theatre and any other surgical related field.
+                            <br>
+                            Academic/Education
+                            <br>
+                            As a Preceptor in assisting and guiding the students’ clinical placement.
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                    <a id="fis" class="mb-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <a id="bcc" class="mb-2" data-bs-toggle="collapse" href="#collapseExample8" role="button" aria-expanded="false" aria-controls="collapseExample"></a>
+                    <div class="collapse" id="collapseExample8">
+                        <div class="card card-body">
+                            Hospital :<br>
+                            Assisting in the ward for basic care to patient <br>
+                            Clinic assisting doctor during examine the patient <br>
+                            
+                            Nursing Home :<br>
+                            Assisting in the ward for basic care to patient
+                        <br><a style="color:blue" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="container text-center mt-3">
+                    <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe7xEQmFldsd2D3WYMfgJmmd8BF1tSknVu2XBTUD83pp9CVqg/viewform">Apply Now!</a>
+                </div>
+                <div class="row">
+                    <div class="text-info text-center">
+                        <img src="assets/picture2.png" id="picbawah" class="rounded mx-auto" alt="picture">
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+
+    </div>
+    
+</body>
+<script>
+    function calculate()
+    {
+        document.getElementById("gagal").textContent = "";
+        document.getElementById("din").textContent = "";
+        document.getElementById("dmi").textContent = "";
+        document.getElementById("dph").textContent = "";
+        document.getElementById("dpy").textContent = "";
+        document.getElementById("dhcm").textContent = "";
+        document.getElementById("dhim").textContent = "";
+        document.getElementById("dora").textContent = "";
+        document.getElementById("fis").textContent = "";
+        document.getElementById("bcc").textContent = "";
+
+        const bm = parseFloat(document.getElementById("bm").value);
+        const bi = parseFloat(document.getElementById("bi").value);
+        const sej = parseFloat(document.getElementById("sej").value);
+        const math = parseFloat(document.getElementById("math").value);
+        const addMath = parseFloat(document.getElementById("addMath").value);
+        const sc = parseFloat(document.getElementById("sc").value);
+        const bio = parseFloat(document.getElementById("bio").value);
+        const chem = parseFloat(document.getElementById("kim").value);
+        const phy = parseFloat(document.getElementById("fiz").value);
+        const sl1 = parseFloat(document.getElementById("sl1").value);
+        const sl2 = parseFloat(document.getElementById("sl2").value);
+
+        const dropdowns = document.getElementsByName("subject");
+        let countAboveTwo = 0;
+
+       
+        for (const dropdown of dropdowns) {
+            const selectedValue = parseFloat(dropdown.value);
+            if (!isNaN(selectedValue) && selectedValue >= 2) {
+                countAboveTwo++;}}
+
+        
+        let countAboveThree = 0;
+
+       
+        for (const dropdown of dropdowns) {
+            const selectedValue = parseFloat(dropdown.value);
+            if (!isNaN(selectedValue) && selectedValue >= 3) {
+                countAboveThree++;}}
+
+            if(bm==isNaN || sej==isNaN){
+                alert("Bahasa Malaysia and Sejarah cannot be empty")
+            }
+
+            else if (bm==0 || sej==0){
+                document.getElementById("gagal").textContent = "Sorry, you are not passing the minimum requirement to apply any of the programme!";
+            }else{
+       
+                
+                if (bm >= 2 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2) && (sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>4) {
+                    document.getElementById("din").textContent = "Diploma in Nursing";
+                }
+
+                if (bm >= 1 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2) && (sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>4 ) {
+                    document.getElementById("dmi").textContent = "Diploma in Medical Imaging";
+                }
+
+                if (bm >= 1 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2 || sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>2) {
+                    document.getElementById("dph").textContent = "Diploma in Pharmacy";
+                }
+
+                if (bm >= 2 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2 || sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>2) {
+                    document.getElementById("dhim").textContent = "Diploma in Health Information Management";
+                }
+
+                if (bm >= 1 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2 || sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>2) {
+                    document.getElementById("dhcm").textContent = "Diploma in Healthcare Management";
+                }
+
+                if (bm >= 2 && bi >= 1 && sej >= 1 && (math >= 1 || addMath >= 1) && ( sc >= 2 || bio >= 2 || chem >= 2 || phy >= 2) && countAboveTwo>2) {
+                    document.getElementById("dora").textContent = "Diploma in Operating Room Assistant";
+                }
+
+                if (bm >= 1 && bi >= 1 && sej >= 1 && (math >= 2 || addMath >= 2) && ((bio >= 2 && chem >= 2) || (bio >= 2 && phy >= 2) || (chem >= 2 && phy >= 2)) && countAboveTwo>4) {
+                    document.getElementById("fis").textContent = "Foundation in Science";
+                }
+                
+                if (bm >= 1 && sej >= 1){
+                    document.getElementById("bcc").textContent = "Basic Care Course for Healthcare Assistants";
+                }
+            }
+       
+            
+        
+       document.getElementsByClassName('form-control').reset;
+    }
+</script>
+</html>
