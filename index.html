@@ -288,6 +288,50 @@
                             </select>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sl3">Other Subject 3 :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sl3">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7">
+                            <label for="sl4">Other Subject 4 :</label>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="subject" id="sl4">
+                                <option value="">Select..</option>
+                                <option value="">Not Taken</option>
+                                <option value="3">A+</option>
+                                <option value="3">A</option>
+                                <option value="3">A-</option>
+                                <option value="3">B+</option>
+                                <option value="3">B</option>
+                                <option value="2">C+</option>
+                                <option value="2">C</option>
+                                <option value="1">D</option>
+                                <option value="1">E</option>
+                                <option value="0">G</option>
+                                <option value="0">TH</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="d-grid gap-2 col-3 mx-auto mt-3">
                         <button class="btn btn-primary">
                             <a onclick="calculate()" class="list-group-item list-group-item-action" href="#scrollDown">Submit</a>
@@ -422,6 +466,8 @@
         const phy = parseFloat(document.getElementById("fiz").value);
         const sl1 = parseFloat(document.getElementById("sl1").value);
         const sl2 = parseFloat(document.getElementById("sl2").value);
+         const sl2 = parseFloat(document.getElementById("sl3").value);
+         const sl2 = parseFloat(document.getElementById("sl4").value);
 
         const dropdowns = document.getElementsByName("subject");
         let countAboveTwo = 0;
